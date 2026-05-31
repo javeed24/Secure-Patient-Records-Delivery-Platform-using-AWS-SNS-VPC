@@ -393,8 +393,11 @@ aws sns publish \
 ### CloudFormation Stack – VPC Created
 ![CloudFormation](screenshots/cloudformation-stack.png)
 
-### VPC and Subnets
-![VPC](screenshots/vpc-subnets.png)
+### VPC created by Cloud Formation 
+![VPC](screenshots/vpc.png)
+
+### Subnets and other resources created by Cloud Formation 
+![Subnets](screenshots/subnets-and-other-resources-created-by-CF.png)
 
 ### VPC Endpoint for SNS
 ![VPC Endpoint](screenshots/vpc-endpoint.png)
@@ -411,8 +414,8 @@ aws sns publish \
 ### Message Published Successfully
 ![Message Published](screenshots/message-published.png)
 
-### Mobile Push Notification Received
-![Push Notification](screenshots/push-notification.png)
+### Hosted application on EC2 instance
+![Message Published](screenshots/ec2instance.png)
 
 ---
 
@@ -422,6 +425,4 @@ aws sns publish \
 - Hosted the hospital application on an EC2 instance within a private subnet
 - Connected the VPC to Amazon SNS using a VPC Interface Endpoint
 - Ensured all patient data travels privately without touching the public internet
-- Encrypted SNS messages at rest using AWS KMS
-- Restricted SNS publish access strictly to resources within the VPC
 - Delivered patient reports securely via mobile push, SMS, and email notifications
